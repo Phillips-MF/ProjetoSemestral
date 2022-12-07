@@ -1,0 +1,112 @@
+* {/*zerando as configurações próprias*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* fim da pagina home*/
+body{
+    font-size: 100%;
+    background-color: #f2eae8;
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0,5px;
+}
+
+.cabecalho-logo{
+    height: 340px;
+}
+
+.cabecalho-banner{
+    height: 300px;
+}
+
+.cabecalho-menu{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.cabecalho-menu-item{
+    font-family: 'Righteous', cursive;
+    color:#602e9e;
+    font-weight: 250px;
+    font-size: 18px;
+}
+
+.cabecalho-menu-item:hover{
+    background-color: #98c5bb;
+}
+
+.conteudo{
+    margin-bottom: 48px;
+    border-top: 0.8px solid #602e9e;
+    gap: 32px;
+    font-family: 'Sarala', cursive;
+    color:#22142b;
+    font-size: 13px;
+}
+
+.conteudoUm{
+    padding: 25px;
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conteudo-imagemUm{
+    padding-bottom: 10px;
+    height: 450px;
+}
+
+.conteudo-textoUm{
+    text-align: justify;
+}
+
+.conteudoDois{
+    display: flex;
+    gap: 21px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conteudo-imagemDois{
+    padding-bottom: 10px;
+    height: 400px;
+}
+
+.conteudo-textoDois{
+    text-align: justify;
+}
+
+.conteudoTres{
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conteudo-imagemTres{
+    padding: 23px;
+    padding-bottom: 10px;
+    height: 350px;
+}
+
+.rodape{
+    padding: 15px;
+    border-top: 0.8px solid #602e9e;
+}
+
+.rodape-imagem{
+    height: 145px;
+    display: block;
+    margin: 0 auto;
+} 
