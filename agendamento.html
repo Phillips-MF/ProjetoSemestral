@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Mudança de tela-->
+    <meta name="description" content="Serviços de podologia, manicure, pedicure e design de sobrancelhas por Patrícia F. Bezerra"><!--Descrição que aparece no google-->
+    <title>Site Estética - Patrícia</title>
+    <link rel="stylesheet" type="text/css" href="style_agendamento.css">
+</head>
+<script>
+  function Verifica_informacoes(){
+    var n,c,e,t,sm,sp;
+    n = document.formulario_cadastro.txt_nome.value
+    if (n.length == 0){
+      alert("Preencha o campo nome");
+      return false;
+    } //Verifica informação do nome
+
+    c = document.formulario_cadastro.txt_cpf.value
+    if (c.length == 0){
+      alert("Preencha o campo CPF");
+      return false;
+    } //Verifica informação do CPF
+
+    e = document.formulario_cadastro.txt_email.value
+    if (e.length == 0){
+      alert("Preencha o campo email");
+      return false;
+    } //Verifica informação do email
+
+    t = document.formulario_cadastro.txt_telefone.value
+    if (t.length == 0){
+      alert("Preencha o campo telefone");
+      return false;
+    }//Verifica informação do telefone
+
+    s = document.formulario_cadastro.txt_servico.value
+    if (s == "Podologia" | s == "Manicure"){
+      document.formulario_cadastro.submit();
+      return true;
+    } else{
+      alert("Informe uma opção válida");
+      return false;
+    }//Verifica informações do serviço
+    
+    
+  }
+</script><!--Fim script-->
+
+<body>
+    <header class="cabecalho"><!--banner e logo padrão-->
+      <img class="cabecalho-logo" src="logo.png" alt="Logotipo Patrícia F. Bezerra, com a frase Nada do que é feito por amor é pequeno, para o início da página">
+      <img class="cabecalho-banner" src="banner.png" alt="Banner Patrícia F. Bezerra, com a frase Nada do que é feito por amor é pequeno, para o início da página">
+    </header>
+      <nav class="cabecalho-menu"><!--opções do menu-->
+          <a class="cabecalho-menu-item" href="index.html">Home</a>
+          <a class="cabecalho-menu-item" href="trabalhos.html">Trabalhos</a>
+          <a class="cabecalho-menu-item" href="sobremim.html">Sobre Mim</a>
+          <a class="cabecalho-menu-item" href="agendamento.html">Agendar</a>
+      </nav>
+
+    <main class="conteudo-agendamento">
+      <h1 class="conteudo-agendamento-titulo">Agendamento</h1>
+      <p class="conteudo-agendamento-texto">Por favor, insira todas as suas informações</p>
+      <form  name ="formulario_cadastro" method="post" action="grava.jsp">
+
+        <fieldset class="grupo"><!--Início informações pessoais-->
+
+            <legend class="grupo-legenda">Informações pessoais</legend>
+            <div class="campo">
+              <label for="txt_nome">Nome completo</label><br>
+              <input type="text" name="txt_nome"><br>
+            </div>
+            <div class="campo">
+              <label for="txt_cpf">CPF</label><br>
+              <input type="text" name="txt_cpf"><br>
+            </div>
+            <div class="campo">
+              <label for="txt_email">Email</label><br>
+              <input type="text" name="txt_email"><br>
+            </div>
+            <div class="campo">
+              <label for="txt_telefone">Telefone</label><br>
+              <input type="text" name="txt_telefone"><br>
+            </div>
+
+        </fieldset><!--Fim informações pessoais-->
+
+        <fieldset class="grupo"><!--Início informações serviços-->
+
+            <legend class="grupo-legenda">Informações de serviços</legend>
+            <p class="grupo-legenda-texto">Informe quais serviços você deseja</p><br>
+            <div class="campo">
+              <label for="txt_servico">Serviços</label>
+              <p>Podologia ou Manicure</p>
+              <input type="text" name="txt_servico">
+            </div>
+
+        </fieldset><!--Fim informações serviços--> 
+
+        <input class="agendamento-botao" type="button" value="Agendar" onclick="Verifica_informacoes()">
+      </form>
+  </main>
+  <footer class="rodape">
+    <img class="rodape-imagem" src="Patricia_rodape.jpg" alt="Logo redonda Patrícia F. Bezerra, com a frase Nada do que é feito por amor é pequeno, para o rodapé">
+  </footer>
+</body>
+</html>

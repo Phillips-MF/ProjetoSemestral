@@ -1,0 +1,92 @@
+* {/*zerando as configurações próprias*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* fim da pagina home*/
+body{
+    font-size: 100%;
+    background-color: #f2eae8;
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0,5px;
+}
+.cabecalho-logo{
+    height: 340px;
+}
+
+.cabecalho-banner{
+    height: 300px;
+}
+
+.cabecalho-menu{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.cabecalho-menu-item{
+    font-family: 'Righteous', cursive;
+    color:#602e9e;
+    font-weight: 250px;
+    font-size: 18px;
+}
+
+.cabecalho-menu-item:hover{
+    background-color: #98c5bb;
+}
+
+.conteudo-agendamento{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+.conteudo-agendamento-titulo{
+    font-family: 'Righteous', cursive;
+    color:#602e9e;
+}
+
+.conteudo-agendamento-texto{
+    font-family: 'Righteous', cursive;
+    color:#602e9e;
+}
+
+.grupo{
+    margin-bottom: 1em;
+}
+
+.campo{
+    font-family: 'Righteous', cursive;
+    color:#602e9e;
+    border-color: darkorchid;
+}
+
+.grupo-legenda{
+    font-family: 'Righteous', cursive;
+    color:#602e9e;
+}
+
+.grupo-legenda-texto{
+    font-family: 'Righteous', cursive;
+    color:#602e9e;
+}
+
+.agendamento-botao{
+    font-family: 'Righteous', cursive;
+    color:#602e9e;
+}
+
+.rodape-imagem{
+    margin-left: 550px;
+}
+
