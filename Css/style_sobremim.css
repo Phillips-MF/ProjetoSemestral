@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala&display=swap'); /*fontes das letras*/
+
 * {/*zerando as configurações próprias*/
     margin: 0;
     padding: 0;
@@ -19,6 +20,7 @@ body{
     justify-content: center;
     padding: 0,5px;
 }
+
 .cabecalho-logo{
     height: 340px;
 }
@@ -44,50 +46,3 @@ body{
 .cabecalho-menu-item:hover{
     background-color: #98c5bb;
 }
-
-.conteudo-agendamento{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    
-}
-
-.conteudo-agendamento-titulo{
-    font-family: 'Righteous', cursive;
-    color:#602e9e;
-}
-
-.conteudo-agendamento-texto{
-    font-family: 'Righteous', cursive;
-    color:#602e9e;
-}
-
-.grupo{
-    margin-bottom: 1em;
-}
-
-.campo{
-    font-family: 'Righteous', cursive;
-    color:#602e9e;
-    border-color: darkorchid;
-}
-
-.grupo-legenda{
-    font-family: 'Righteous', cursive;
-    color:#602e9e;
-}
-
-.grupo-legenda-texto{
-    font-family: 'Righteous', cursive;
-    color:#602e9e;
-}
-
-.agendamento-botao{
-    font-family: 'Righteous', cursive;
-    color:#602e9e;
-}
-
-.rodape-imagem{
-    margin-left: 550px;
-}
-
