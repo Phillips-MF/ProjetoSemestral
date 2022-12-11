@@ -46,3 +46,14 @@ body{
 .cabecalho-menu-item:hover{
     background-color: #98c5bb;
 }
+
+.rodape{
+    padding: 15px;
+    border-top: 0.8px solid #602e9e;
+}
+
+.rodape-imagem{
+    height: 145px;
+    display: block;
+    margin: 0 auto;
+} 

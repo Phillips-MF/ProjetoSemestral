@@ -87,6 +87,11 @@ body{
     color:#602e9e;
 }
 
+.rodape{
+    padding: 15px;
+    border-top: 0.8px solid #602e9e;
+}
+
 .rodape-imagem{
     margin-left: 550px;
 }

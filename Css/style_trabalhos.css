@@ -147,6 +147,11 @@ input{
     margin-top: 600px;
 }
 
+.rodape{
+    padding: 15px;
+    border-top: 0.8px solid #602e9e;
+}
+
 .rodape-imagem2{
     margin-top: 15px;
     margin-left: 554px;
